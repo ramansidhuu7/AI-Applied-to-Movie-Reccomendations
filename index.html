@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendation System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://movie-recommendation-system.s3.amazonaws.com/Background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            color: white;
+        }
+
+        .container {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Movie Recommendation System</h1>
+        <form action="/" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1">
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="mood">Mood:</label>
+            <select id="mood" name="mood">
+                <option value="">Select Mood</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="neutral">Neutral</option>
+                <option value="romantic">Romantic</option>
+            </select>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
