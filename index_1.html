@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Similarity Prediction</title>
+</head>
+<body>
+    <h1>Movie Similarity Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="movie_title">Enter Movie Title:</label><br>
+        <input type="text" id="movie_title" name="movie_title"><br>
+        <label for="similarity_weight">Similarity Weight (0-1):</label><br>
+        <input type="text" id="similarity_weight" name="similarity_weight"><br>
+        <label for="top_n">Top N Movies:</label><br>
+        <input type="text" id="top_n" name="top_n"><br><br>
+        <input type="submit" value="Predict Similar Movies">
+    </form>
+</body>
+</html>
